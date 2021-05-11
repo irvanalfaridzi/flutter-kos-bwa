@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1066432975599",
+    "project_id": "flutter-cozy-kos",
+    "storage_bucket": "flutter-cozy-kos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066432975599:android:59060e12a23e0378d0811a",
+        "android_client_info": {
+          "package_name": "com.example.bwa_cozy_kos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066432975599-jakguemd9sj20vk47n0eef1to8u70jab.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJrl3hsbg_u5IP3FW9blzBFTZmcrU2CpU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066432975599-jakguemd9sj20vk47n0eef1to8u70jab.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
