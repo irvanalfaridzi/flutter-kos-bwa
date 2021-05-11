@@ -5,7 +5,11 @@ class FacilityItem extends StatelessWidget {
   final int jumlah;
   final String jenisFacility;
 
-  FacilityItem(this.urlImage, this.jumlah, this.jenisFacility);
+  FacilityItem(
+    this.urlImage,
+    this.jumlah,
+    this.jenisFacility,
+  );
   @override
   Widget build(BuildContext context) {
     return Column(

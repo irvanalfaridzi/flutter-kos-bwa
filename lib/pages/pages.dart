@@ -6,6 +6,10 @@ import 'package:bwa_cozy_kos/themes.dart';
 import 'package:provider/provider.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../models/models.dart';
+import '../themes.dart';
+import '../widgets/widgets.dart';
+
 part 'splash_page.dart';
 part 'main_page.dart';
 part 'detail_page.dart';

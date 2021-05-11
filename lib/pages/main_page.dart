@@ -4,7 +4,7 @@ class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var spaceProvider = Provider.of<SpaceProvider>(context);
-    spaceProvider.getRecommendedSpaces();
+
     return Scaffold(
       body: SafeArea(
           child: ListView(children: [
@@ -81,36 +81,37 @@ class MainPage extends StatelessWidget {
               SizedBox(
                 height: 16,
               ),
-              SpaceCard(Space(
-                  id: 1,
-                  urlImage: "assets/images/kos-1.png",
-                  star: 4,
-                  namaSpace: "Kuetakeso Hott",
-                  harga: 52,
-                  city: "Bandung",
-                  country: "Germany")),
-              SizedBox(
-                height: 30,
+
+              Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: 0,
+                ),
+                child: FutureBuilder(
+                  future: spaceProvider.getRecommendedSpaces(),
+                  builder: (context, snapshot) {
+                    if (snapshot.hasData) {
+                      List<Space> data = snapshot.data;
+
+                      int index = 0;
+
+                      return Column(
+                        children: data.map((item) {
+                          index++;
+                          return Container(
+                            margin: EdgeInsets.only(top: index == 1 ? 0 : 30),
+                            child: SpaceCard(item),
+                          );
+                        }).toList(),
+                      );
+                    }
+
+                    return Center(
+                      child: CircularProgressIndicator(),
+                    );
+                  },
+                ),
               ),
-              SpaceCard(Space(
-                  id: 2,
-                  urlImage: "assets/images/kos-2.png",
-                  star: 5,
-                  namaSpace: "Roemah Nenek",
-                  harga: 11,
-                  city: "Seattle",
-                  country: "Bogor")),
-              SizedBox(
-                height: 30,
-              ),
-              SpaceCard(Space(
-                  id: 3,
-                  urlImage: "assets/images/kos-3.png",
-                  star: 4,
-                  namaSpace: "Darrling How",
-                  harga: 20,
-                  city: "Jakarta",
-                  country: "Indonesia")),
+
               SizedBox(
                 height: 30,
               ),

@@ -5,7 +5,7 @@ class Space {
   String namaSpace;
   String city;
   String country;
-  double harga;
+  int harga;
   String urlImage;
   int star;
   String address;
@@ -44,6 +44,7 @@ class Space {
     address = json['address'];
     phone = json['phone'];
     mapUrl = json['map_url'];
+    photo = json['photos'];
     numberKitchens = json['number_of_kitchens'];
     numberBedrooms = json['number_of_bedrooms'];
     numberCupboards = json['number_of_cupboards'];

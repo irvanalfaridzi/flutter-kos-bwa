@@ -13,10 +13,19 @@ Color navbarBtnColor = Color(0xFF7F74EB);
 double edge = 24.0;
 
 TextStyle judulText = GoogleFonts.poppins(
-    fontWeight: FontWeight.w500, fontSize: 24, color: blackColor);
+  fontWeight: FontWeight.w500,
+  fontSize: 24,
+  color: blackColor,
+);
 
 TextStyle isiText = GoogleFonts.poppins(
-    fontWeight: FontWeight.w300, color: greyTextColor, fontSize: 16);
+  fontWeight: FontWeight.w300,
+  color: greyTextColor,
+  fontSize: 16,
+);
 
 TextStyle buttonText = GoogleFonts.poppins(
-    fontWeight: FontWeight.w500, color: whiteColor, fontSize: 18);
+  fontWeight: FontWeight.w500,
+  color: whiteColor,
+  fontSize: 18,
+);
