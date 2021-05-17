@@ -24,6 +24,7 @@ class MainPage extends StatelessWidget {
               SizedBox(
                 height: 30,
               ),
+
               // Popular Cities
               Text(
                 "Popular Cities",
@@ -38,32 +39,65 @@ class MainPage extends StatelessWidget {
                 child: ListView(
                   scrollDirection: Axis.horizontal,
                   children: [
-                    CityCard(City(
+                    CityCard(
+                      City(
                         id: 1,
                         namaKota: "Jakarta",
-                        urlImage: "assets/images/city-1.png")),
+                        urlImage: "assets/images/city-1.png",
+                      ),
+                    ),
                     SizedBox(
                       width: 20,
                     ),
-                    CityCard(City(
+                    CityCard(
+                      City(
                         id: 2,
                         namaKota: "Bandung",
                         urlImage: "assets/images/city-2.png",
-                        isPopular: true)),
+                        isPopular: true,
+                      ),
+                    ),
                     SizedBox(
                       width: 20,
                     ),
-                    CityCard(City(
+                    CityCard(
+                      City(
                         id: 3,
                         namaKota: "Surabaya",
-                        urlImage: "assets/images/city-3.png")),
+                        urlImage: "assets/images/city-3.png",
+                      ),
+                    ),
                     SizedBox(
                       width: 20,
                     ),
-                    CityCard(City(
+                    CityCard(
+                      City(
                         id: 4,
                         namaKota: "Palembang",
-                        urlImage: "assets/images/city-4.png")),
+                        urlImage: "assets/images/city-4.png",
+                      ),
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    CityCard(
+                      City(
+                        id: 5,
+                        namaKota: "Aceh",
+                        urlImage: "assets/images/city-5.png",
+                        isPopular: true,
+                      ),
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    CityCard(
+                      City(
+                        id: 4,
+                        namaKota: "Bogor",
+                        urlImage: "assets/images/city-6.png",
+                      ),
+                    ),
                     SizedBox(
                       width: 20,
                     ),
